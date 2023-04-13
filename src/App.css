@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root
+{
+    --yellow: #442cf5;
+    --orange : #8308f7;
+    --black : #242d49e1;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(97, 31, 252, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --red:#D73032;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    padding: 1rem 3.5rem;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    overflow: hidden;
+    color: var(--black);    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button{
+  border:1px solid black;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  padding:6px 20px 5px;
+  background: #D73032;
+  box-shadow: 10px -10px rgb(0, 0, 0);
+}
+
+.complete_box{
+  box-shadow: 10px -10px rgb(0, 0, 0);
+}
+
+.button:hover{
+  background: rgb(170, 26, 26);
+  cursor:pointer;
+}
+  
+@media screen and (max-width: 480px) {
+  .App{
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
+    width:fit-content;
+    height:50%;
+
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  

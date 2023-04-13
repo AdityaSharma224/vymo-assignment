@@ -1,0 +1,198 @@
+.intro {
+  display: flex;
+  height: 66vh;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.i-name > :nth-child(1) {
+  font-size: 3rem;
+}
+
+.i-name .name {
+  color: var(--red);
+  font-size: 3rem;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.i-name > :nth-child(2) {
+  margin-top: -2rem;
+  font-weight: 100;
+  font-weight: 14px;
+  color: var(--black);
+}
+
+.i-button {
+  width: rem;
+  height: auto;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.n-button {
+  padding: 15px 50px;
+}
+
+.i-icons {
+  margin-top: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailBox {
+  margin-top: 2rem;
+}
+
+.emailBox input[type="search"] {
+  margin: 0;
+  padding: 13px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid black;
+  width: 250px;
+}
+
+input[type="search"]::placeholder {
+  color: #000000;
+}
+
+.i-icons img {
+  height: auto;
+  width: 290px;
+  margin-right: -120px;
+  align-items: center;
+}
+
+.i-icons > * {
+  transform: scale(0.4);
+}
+
+.i-icons > *:hover {
+  cursor: pointer;
+}
+.i-icons {
+  height: 5rem;
+  margin-right: 3rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100vh;
+    display: flex;
+    height: 80rem;
+    align-items: center;
+    margin-left: 5rem;
+  }
+
+  .floating-div:nth-of-type(1) {
+    /* display: none; */
+    top: -7rem !important;
+  }
+
+  .i-left {
+    gap: 5rem;
+    width:100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .i-name > :nth-child(1) {
+    font-size: 5rem;
+  }
+  
+  .i-name .name {
+    color: var(--red);
+    font-size: 6rem;
+  }
+  
+  .name {
+    font-weight: bolder;
+  }
+  
+  .i-name > :nth-child(2) {
+    font-weight: 100;
+    margin-top: -4rem;
+    font-size: 40px;
+    align-content: center;
+    text-align: center;
+    color: var(--black);
+  }
+  
+  .n-button {
+    padding: 33px 40px;
+    font-size: 30px;
+  }
+  
+  .i-icons {
+    margin-top: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .emailBox {
+    margin-top: 2rem;
+    height: auto;
+  }
+  
+  .emailBox input[type="search"] {
+    padding: 40px 140px;
+    font-size: 14px;
+    margin-top: -2rem;
+    color: inherit;
+    border: 1px solid black;
+
+  }
+  
+  input[type="search"]::placeholder {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+  }
+  .i-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right:15rem;
+  }
+  .i-icons img {
+    height: auto;
+    width: 30rem;
+    margin-right: -350px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
+}
